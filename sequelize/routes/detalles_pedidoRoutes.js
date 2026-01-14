@@ -1,19 +1,19 @@
 // routes/detalles_pedidoRoutes.js
 import express from "express";
 import {
-  crearDetalles_pedid,
+  crearDetalles_pedido,
+  obtenerDetalles_pedidos,
   obtenerDetalles_pedido,
-  obtenerDetalles_pedid,
-  actualizarDetalles_pedid,
-  eliminarDetalles_pedid
+  actualizarDetalles_pedido,
+  eliminarDetalles_pedido
 } from "../controllers/detalles_pedidoController.js";
 
 const router = express.Router();
 
-router.get("/", obtenerDetalles_pedido);
-router.get("/:id", obtenerDetalles_pedid);
-router.post("/", crearDetalles_pedid);
-router.put("/:id", actualizarDetalles_pedid);
-router.delete("/:id", eliminarDetalles_pedid);
+router.get("/", obtenerDetalles_pedidos);
+router.get("/:id", obtenerDetalles_pedido);
+router.post("/", crearDetalles_pedido);
+router.put("/:id", actualizarDetalles_pedido);
+router.delete("/:id", eliminarDetalles_pedido);
 
 export default router;

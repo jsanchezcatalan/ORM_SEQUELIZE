@@ -1,7 +1,7 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class log extends Model {
+export default class log18 extends Model {
   static init(sequelize, DataTypes) {
   return super.init({
     id: {
@@ -16,7 +16,7 @@ export default class log extends Model {
     }
   }, {
     sequelize,
-    tableName: 'log',
+    tableName: 'log18',
     timestamps: false,
     indexes: [
       {

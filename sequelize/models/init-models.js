@@ -3,7 +3,10 @@ const DataTypes = _sequelize.DataTypes;
 import _categorias from  "./categorias.js";
 import _clientes from  "./clientes.js";
 import _detalles_pedido from  "./detalles_pedido.js";
-import _log from  "./log.js";
+import _log10 from  "./log10.js";
+import _log18 from  "./log18.js";
+import _log5 from  "./log5.js";
+import _log8 from  "./log8.js";
 import _pedidos from  "./pedidos.js";
 import _productos from  "./productos.js";
 
@@ -11,7 +14,10 @@ export default function initModels(sequelize) {
   const categorias = _categorias.init(sequelize, DataTypes);
   const clientes = _clientes.init(sequelize, DataTypes);
   const detalles_pedido = _detalles_pedido.init(sequelize, DataTypes);
-  const log = _log.init(sequelize, DataTypes);
+  const log10 = _log10.init(sequelize, DataTypes);
+  const log18 = _log18.init(sequelize, DataTypes);
+  const log5 = _log5.init(sequelize, DataTypes);
+  const log8 = _log8.init(sequelize, DataTypes);
   const pedidos = _pedidos.init(sequelize, DataTypes);
   const productos = _productos.init(sequelize, DataTypes);
 
@@ -26,7 +32,10 @@ export default function initModels(sequelize) {
     categorias,
     clientes,
     detalles_pedido,
-    log,
+    log10,
+    log18,
+    log5,
+    log8,
     pedidos,
     productos,
   };
