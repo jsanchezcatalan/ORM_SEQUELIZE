@@ -10,6 +10,7 @@ import detallesPedidoRoutes from "./routes/detalles_pedidoRoutes.js";
 import log5Routes from "./routes/log5Routes.js";
 import log8Routes from "./routes/log8Routes.js";
 import log10Routes from "./routes/log10Routes.js";
+import carlos46Routes from "./routes/carlos46Routes.js";
 
 const app = express();
 app.use(express.json());
@@ -23,6 +24,7 @@ app.use("/api/detalles_pedido", detallesPedidoRoutes);
 app.use("/api/log5", log5Routes);
 app.use("/api/log8", log8Routes);
 app.use("/api/log10", log10Routes);
+app.use("/api/carlos46", carlos46Routes);
 // Sincronizar base de datos
 (async () => {
 try {
